@@ -76,3 +76,5 @@ $(warning "Build legacy sepolicy")
       BOARD_SEPOLICY_DIRS += $(SEPOLICY_PATH)/legacy/vendor/test/sysmonapp
     endif
 endif
+
+-include device/lineage/sepolicy/qcom/sepolicy.mk
