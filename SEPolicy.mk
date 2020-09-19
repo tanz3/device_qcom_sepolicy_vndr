@@ -1,5 +1,4 @@
 # Board specific SELinux policy variable definitions
-ifeq ($(call is-vendor-board-platform,QCOM),true)
 SEPOLICY_PATH:= device/qcom/sepolicy_vndr
 QSSI_SEPOLICY_PATH:= device/qcom/sepolicy
 SYS_ATTR_PROJECT_PATH := $(TOP)/device/qcom/sepolicy/generic/public/attribute
@@ -76,5 +75,4 @@ $(warning "Build legacy sepolicy")
       BOARD_SEPOLICY_DIRS += $(SEPOLICY_PATH)/legacy/vendor/test
       BOARD_SEPOLICY_DIRS += $(SEPOLICY_PATH)/legacy/vendor/test/sysmonapp
     endif
-endif
 endif
