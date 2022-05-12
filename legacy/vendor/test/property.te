@@ -26,3 +26,6 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 type vendor_sensors_dbg_prop, property_type;
 
+#debugutils HAL
+type vendor_dbg_brkpoint_prop, property_type;
+
